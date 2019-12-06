@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perrogato2"
+        />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bienvenido"
+        android:textColor="@color/negro"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <EditText
+            android:id="@+id/editUserLog"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="Ingrese Usuario"
+            android:textColor="@color/negro"
+            />
+        <EditText
+            android:id="@+id/editPasswordLog"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="Ingrese Contraseña"
+            android:textColor="@color/negro"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:onClick="Login"
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Sign In"
+            android:background="@drawable/button_style"
+            />
+        <TextView
+            android:id="@+id/textRegistro"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Registrar Usuario"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:onClick="RegistroUsuario"
+            android:textColor="@color/negro"
+            />
+    </LinearLayout>
+
+</LinearLayout>

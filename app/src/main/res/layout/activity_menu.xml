@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lila"
+    tools:context=".Menu">
+    <LinearLayout
+        android:id="@+id/irPerfil"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:onClick="irPerfil"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/perfil2" />
+
+        <TextView
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="2"
+            android:text="Ir a perfil"
+            android:textColor="@color/negro"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Buscas un perrito/gatito"
+        android:textColor="@color/negro"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Adoptar"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/negro"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Perdido"
+            android:textColor="@color/negro"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/paraAdoptar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="70dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/perrogatoimg"
+            android:onClick="AdoptarMascota"
+            />
+
+
+        <ImageButton
+            android:id="@+id/buscarPerdido"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="BuscarPerdido"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/perdido" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Registrar para:"
+        android:textColor="@color/negro"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="55dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="52dp"
+            android:text="Adopcion      "
+            android:textColor="@color/negro"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perdida"
+            android:textColor="@color/negro"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_reg_adopcion"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_marginRight="60dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:onClick="registrarmascota"
+            android:scaleType="fitCenter"
+            android:src="@drawable/perrogato3" />
+
+        <ImageButton
+            android:gravity="center_vertical"
+            android:id="@+id/btn_reg_perdido"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/perdio"
+            android:onClick="RegistroPerdido"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

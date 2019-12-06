@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroPerdido"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/blanco"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:id="@+id/imageIcon"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/negro"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageButton
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="70dp"
+                    android:id="@+id/galeriaFoto"
+                    android:onClick="pickImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/galeriaimg"/>
+
+            </LinearLayout>
+
+            <ToggleButton
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/esUnPerroGato"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="ToggleButton"
+                android:textOn="Gato"
+                android:textOff="Perro"
+                android:background="@color/verde"/>
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Raza: "
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/raza"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Edad: "
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/seekBarEdad"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:max="20"
+            android:layout_margin="5dp"
+            android:progress="0"
+            android:text="Años" />
+        <TextView
+            android:id="@+id/txtEdad"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/negro"
+            />
+        <ToggleButton
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnEdad"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="ToggleButton"
+            android:textOn="Año"
+            android:textOff="Meses"
+            android:background="@color/verde"/>
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Hogar: "
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/negro"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Vacunas: "
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+        <ToggleButton
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnVacunas"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="ToggleButton"
+            android:textOn="Si"
+            android:textOff="No"
+            android:background="@color/verde"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:text="Descripcion: "
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtNameDueño"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:textColor="@color/negro"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/rojo"
+        android:textColor="@color/negro"
+        android:textStyle="bold"
+        android:text="Registrar"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>
