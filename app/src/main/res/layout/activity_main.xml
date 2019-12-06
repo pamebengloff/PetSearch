@@ -43,7 +43,7 @@
             />
         <EditText
             android:id="@+id/editPasswordLog"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:hint="Ingrese Contraseña"
@@ -61,7 +61,7 @@
             />
         <TextView
             android:id="@+id/textRegistro"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="Registrar Usuario"
