@@ -29,7 +29,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistroUsuario extends AppCompatActivity {
-
     Button btnRegistro;
     EditText editName, editPhone, editEmail, editUser, editPassword, editPassword2;
 
@@ -90,10 +89,11 @@ public class RegistroUsuario extends AppCompatActivity {
                 parametros.put("editUser",editUser.getText().toString());
                 parametros.put("editPassword",editPassword2.getText().toString());
                 return parametros;
-    }
+            }
         };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
 
     }
+
 }
